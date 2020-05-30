@@ -9,6 +9,7 @@ import {
 
 import Home from '../redux/components/Home.jsx';
 import User from '../redux/components/User.jsx';
+import Login from '../redux/components/Login.jsx';
 
 class App extends React.Component {
   render() {
@@ -33,7 +34,7 @@ class App extends React.Component {
 
           <Switch>
             <Route exact path="/users" component={User} />
-            <Route exact path="/login"><Login /></Route>
+            <Route exact path="/login" component={Login} />
             <Route exact path="/home" component={Home} />
           </Switch>
         </div>
@@ -48,10 +49,6 @@ App.defaulfProps = {
 
 App.propTypes = {
   isLogin: PropTypes.bool
-}
-
-function Login() {
-  return <h2>Login</h2>;
 }
 
 export default App;

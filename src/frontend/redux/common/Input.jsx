@@ -14,14 +14,15 @@ class Input extends Component {
   render() {
     const { 
       className,
-      placeholder
-
+      placeholder,
+      size
     } = this.props;
 
     return (
       <div className={className}>
-        <InputGroup className="mb-3">
+        <InputGroup className="mb-3 u-textBase" size={size}>
           <FormControl
+            className="InputGroup"
             placeholder={placeholder}
           />
         </InputGroup>
@@ -30,9 +31,14 @@ class Input extends Component {
   }
 }
 
+Input.defaultProps = {
+  size: ''
+}
+
 Input.propTypes = {
   className: PropTypes.string,
   placeholder: PropTypes.string,
+  size: PropTypes.string,
 }
 
 export default Input;

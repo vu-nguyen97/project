@@ -20,7 +20,7 @@ $black-800: #182C4F !default;
 $black-900: #0A1F44 !default;
 $black    : #000000 !default;
 
-$primary: #0c66ff !default;
+$primary: #007bff !default;
 $success: #22c993 !default;
 $warning: #ffad0d !default;
 $danger : #f03d3d !default;
@@ -31,7 +31,7 @@ $border-color: $gray-400;
 .u-border { border: $border-width solid $border-color !important; }
 .u-border0 { border: 0 !important; }
 
-$rounded-pill: 80rem !default;
+$rounded-pill: 1rem !default;
 .u-roundedCircle {
   border-radius: 50% !important;
 }

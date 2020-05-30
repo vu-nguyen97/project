@@ -1,0 +1,26 @@
+@mixin hover-primary {
+  background-color: $primary !important;
+  color: white !important;
+}
+
+.Login {
+  &-wrapper {
+    background-color: $gray-300;
+  }
+  &-registerBtn {
+    &:hover {
+      @include hover-primary();
+    }
+  }
+}
+
+.Register {
+  &-wrapper {
+    background-color: $gray-300;
+  }
+  &-loginBtn {
+    &:hover {
+      @include hover-primary();
+    }
+  }
+}

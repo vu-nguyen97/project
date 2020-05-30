@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,48 +7,51 @@ import {
   Link
 } from "react-router-dom";
 
-export default function App() {
-  return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/home">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
+import Home from '../redux/components/Home.jsx';
+import User from '../redux/components/User.jsx';
 
-        <Switch>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/users">
-            <Users />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
+class App extends React.Component {
+  render() {
+    const { isLogin } = this.props;
+    return (
+      <Router>
+        <div>
+          <nav>
+            {
+              isLogin ?
+                <ul>
+                  <li><Link to="/home">Home</Link></li>
+                  <li><Link to="/users">Users</Link></li>
+                </ul>
+                :
+                <ul>
+                  <li><Link to="/home">Home</Link></li>
+                  <li><Link to="/login">login</Link></li>
+                </ul>
+            }
+          </nav>
+
+          <Switch>
+            <Route exact path="/users" component={User} />
+            <Route exact path="/login"><Login /></Route>
+            <Route exact path="/home" component={Home} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
-function Home() {
-  return <h2>Home</h2>;
+App.defaulfProps = {
+  isLogin: false
 }
 
-function About() {
-  return <h2>About</h2>;
+App.propTypes = {
+  isLogin: PropTypes.bool
 }
 
-function Users() {
-  return <h2>Users</h2>;
+function Login() {
+  return <h2>Login</h2>;
 }
+
+export default App;

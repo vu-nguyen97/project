@@ -13,9 +13,15 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="test">
+      <div className="u-textCenter u-textLarge u-fontWeightBolder">
         <p>Login</p>
-        <Input />
+        <div className="row">
+          <div className="col-4" />
+          <div className="col-4">
+            <Input placeholder="Username" />
+            <Input placeholder="Password" />
+          </div>
+        </div>
       </div>
     );
   }

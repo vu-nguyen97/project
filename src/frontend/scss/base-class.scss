@@ -1,0 +1,247 @@
+$transparent: rgba(0,0,0,.001) !default;
+$white:       #ffffff !default;
+$gray-100 : #FCFCFD !default;
+$gray-200 : #F8F9FB !default;
+$gray-300 : #F1F2F4 !default;
+$gray-400 : #E1E4E8 !default;
+$gray-500 : #C9CED6 !default;
+$gray-600 : #B5BBC6 !default;
+$gray-700 : #A6AEBC !default;
+$gray-800 : #98A1B1 !default;
+$gray-900 : #8A94A6 !default;
+$black-100: #758196 !default;
+$black-200: #6C798F !default;
+$black-300: #5D6C84 !default;
+$black-400: #53627C !default;
+$black-500: #445571 !default;
+$black-600: #364866 !default;
+$black-700: #273A5B !default;
+$black-800: #182C4F !default;
+$black-900: #0A1F44 !default;
+$black    : #000000 !default;
+
+$primary: #0c66ff !default;
+$success: #22c993 !default;
+$warning: #ffad0d !default;
+$danger : #f03d3d !default;
+// ===================================Border=================================
+
+$border-width: 1px !default;
+$border-color: $gray-400;
+.u-border { border: $border-width solid $border-color !important; }
+.u-border0 { border: 0 !important; }
+
+$rounded-pill: 80rem !default;
+.u-roundedCircle {
+  border-radius: 50% !important;
+}
+.u-roundedPill {
+  border-radius: $rounded-pill !important;
+}
+.u-rounded0 {
+  border-radius: 0 !important;
+}
+// ====================================Text================================
+
+$font-size-base: 1.4rem !default;
+$font-size-lg:   1.6rem !default;
+$font-size-xlg:   2rem;
+$font-size-sm:   1.2rem !default;
+
+.u-textBase {
+  font-size: $font-size-base;
+}
+.u-textSmall {
+  font-size: $font-size-sm;
+}
+.u-textLarge {
+  font-size: $font-size-lg;
+}
+
+.u-textWhite { color: white !important; }
+.u-textBlack { color: $black-800 !important; }
+
+.u-textCenter { text-align: center !important; }
+.u-textRight { text-align: right !important; }
+
+@mixin text-truncate() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.u-textTruncate  { @include text-truncate; }
+
+.u-textLowercase  { text-transform: lowercase !important; }
+.u-textUppercase  { text-transform: uppercase !important; }
+.u-textCapitalize { text-transform: capitalize !important; }
+// ===================================Font=================================
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            500 !default;
+$font-weight-bolder:          bolder !default;
+
+.u-fontWeightLighter { font-weight: $font-weight-lighter !important; }
+.u-fontWeightLight   { font-weight: $font-weight-light !important; }
+.u-fontWeightNormal  { font-weight: $font-weight-normal !important; }
+.u-fontWeightBold    { font-weight: $font-weight-bold !important; }
+.u-fontWeightBolder  { font-weight: $font-weight-bolder !important; }
+// ===================================Shadow=================================
+$shadow-low:          0 0 1px 0 rgba(10, 31, 68, 0.08);
+$shadow-high:         0 0 1px 0 rgba(10, 31, 68, 0.1);
+
+$box-shadow-lighter:   0 1px 1px 0 rgba(10, 31, 68, 0.08), $shadow-low !default;
+$box-shadow-light:      0 3px 4px 0 rgba(10, 31, 68, 0.1), $shadow-low !default;
+$box-shadow-medium:   0 8px 10px 0 rgba(10, 31, 68, 0.1), $shadow-low !default;
+$box-shadow-dark:     0 18px 18px 0 rgba(10, 31, 68, 0.12), $shadow-high !default;
+$box-shadow-darker:  0 26px 26px 0 rgba(10, 31, 68, 0.12), $shadow-high !default;
+
+.u-shadowLighter { box-shadow: $box-shadow-lighter !important; }
+.u-shadowLight { box-shadow: $box-shadow-light !important; }
+.u-shadowMedium { box-shadow: $box-shadow-medium !important; }
+.u-shadowDark { box-shadow: $box-shadow-dark !important; }
+.u-shadowDarker { box-shadow: $box-shadow-darker !important; }
+// ===================================Size=================================
+
+.u-width100 {
+  width: 100%;
+}
+
+.u-height100 {
+  height: 100%;
+}
+// ===================================Spacing=================================
+
+@function capitalize($str) {
+  @return to-upper-case(str-slice($str, 1, 1)) + str-slice($str, 2);
+}
+$spacer: 1.6rem !default;
+
+$spacing-directions:  "", "top", "right", "bottom", "left" !default;
+$spacing-sizes: (
+  "0":        0rem,
+  "XSmall":   .4rem,
+  "Small":    .8rem,
+  "":         1.6rem,
+  "Large":    3.2rem,
+  "XLarge":   6.4rem
+) !default;
+
+$spacer-xs: map-get($spacing-sizes, "XSmall");
+$spacer-sm: map-get($spacing-sizes, "Small");
+$spacer-lg: map-get($spacing-sizes, "Large");
+$spacer-xl: map-get($spacing-sizes, "XLarge");
+
+@each $direction in $spacing-directions {
+  @each $size, $value in $spacing-sizes {
+    .u-padding#{capitalize($direction)}#{$size} {
+      @if $direction == "" {
+        padding: $value !important;
+      } @else {
+        padding-#{$direction}: $value !important;
+      }
+    }
+    .u-margin#{capitalize($direction)}#{$size} {
+      @if $direction == "" {
+        margin: $value !important;
+      } @else {
+        margin-#{$direction}: $value !important;
+      }
+    }
+  }
+}
+// ===================================List=================================
+
+.u-listReset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.u-listNone {
+  list-style: none;
+}
+// ===================================Image=================================
+
+@mixin image-fit($object-property) {
+  object-fit: $object-property !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.u-imgContain {
+  @include image-fit(contain);
+}
+.u-imgCover {
+  @include image-fit(cover);
+}
+.u-imgNone {
+  @include image-fit(none);
+}
+.u-imgScaleDown {
+  @include image-fit(scale-down);
+}
+// ===================================Flex=================================
+
+.u-flex {
+  display: flex !important;
+}
+.u-flexRow {
+  flex-direction: row !important;
+}
+.u-flexCol {
+  flex-direction: column !important;
+}
+.u-flexJustifyStart {
+  justify-content: flex-start !important;
+}
+.u-flexJustifyEnd {
+  justify-content: flex-end !important;
+}
+.u-flexJustifyCenter {
+  justify-content: center !important;
+}
+.u-flexJustifyBetween {
+  justify-content: space-between !important;
+}
+.u-flexJustifyAround {
+  justify-content: space-around !important;
+}
+.u-flexAlignItemsStart {
+  align-items: flex-start !important;
+}
+.u-flexAlignItemsEnd {
+  align-items: flex-end !important;
+}
+.u-flexAlignItemsCenter {
+  align-items: center !important;
+}
+.u-flexGrow1 {
+  flex: 1 1 0% !important; /* 1 */
+}
+.u-flexGrow2 {
+  flex: 2 1 0% !important;
+}
+.u-flexGrow3 {
+  flex: 3 1 0% !important;
+}
+// ===================================Background=================================
+
+.u-bgWhite {
+  background-color: $white !important;
+}
+.u-bgTransparent {
+  background-color: transparent !important;
+}
+.u-bgInherit {
+  background-color: inherit !important;
+}
+// ====================================================================
+
+.u-disabled {
+  opacity: 0.35;
+  pointer-events: none;
+  cursor: none;
+}
+.u-cursorPointer {
+  cursor: pointer !important;
+}

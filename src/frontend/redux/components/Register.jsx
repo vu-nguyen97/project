@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
+import Feedback from 'react-bootstrap/Feedback';
 
-import Input from '../common/Input';
 import Login from './Login';
 
 class Register extends Component {
@@ -21,6 +21,14 @@ class Register extends Component {
         <Login />
       );
     }
+    const {
+      // touchedEmail,
+      // touchedPassword,
+      // errors,
+      handleBlur,
+      handleChange,
+      // values
+    } = this.props;
 
     return (
       <div className="Register">
@@ -31,14 +39,68 @@ class Register extends Component {
               u-paddingTop u-paddingBottom u-border u-shadowMedium u-roundedPill
             ">
               <p className="u-textCenter u-textLarge u-fontWeightBolder">Register</p>
-              <div className="u-paddingLeftXSmall">Username</div>
-              <Input placeholder="Username" />
-              <div className="u-paddingLeftXSmall">Email</div>
-              <Input placeholder="Email" />
-              <div className="u-paddingLeftXSmall">Password</div>
-              <Input placeholder="Password" />
-              <div className="u-paddingLeftXSmall">Confirm Password</div>
-              <Input placeholder="Confirm Password" />
+              <div>
+                <Form.Group>
+                  <Form.Label>Username</Form.Label>
+                  <Form.Control
+                    name='username' 
+                    // value={values.password}
+                    type="text" placeholder="Username"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    // isInvalid={touchedPassword && errors.password}
+                  />
+                  <Feedback type='invalid'>
+                    {/* {errors.password} */}
+                  </Feedback>
+                </Form.Group>
+
+                <Form.Group>
+                  <Form.Label>Email</Form.Label>
+                  <Form.Control
+                    name='email' 
+                    // value={values.password}
+                    type="email" placeholder="Email"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    // isInvalid={touchedPassword && errors.password}
+                  />
+                  <Feedback type='invalid'>
+                    {/* {errors.password} */}
+                  </Feedback>
+                </Form.Group>
+
+                <Form.Group>
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control
+                    name='password' 
+                    // value={values.password}
+                    type="password" placeholder="Password"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    // isInvalid={touchedPassword && errors.password}
+                  />
+                  <Feedback type='invalid'>
+                    {/* {errors.password} */}
+                  </Feedback>
+                </Form.Group>
+
+                <Form.Group>
+                  <Form.Label>Confirm Password</Form.Label>
+                  <Form.Control
+                    name='confirm_password' 
+                    // value={values.password}
+                    type="password" placeholder="Confirm Password"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    // isInvalid={touchedPassword && errors.password}
+                  />
+                  <Feedback type='invalid'>
+                    {/* {errors.password} */}
+                  </Feedback>
+                </Form.Group>
+              </div>
+
               <div className="u-flex u-flexAlignItemsCenter u-flexJustifyAround">
                 <Button size="sm" className="u-paddingLeft u-paddingRight">Register</Button>
                 <Button

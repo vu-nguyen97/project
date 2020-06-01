@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
+import Feedback from 'react-bootstrap/Feedback';
 
-import Input from '../common/Input';
 import Register from './Register';
 
 class Login extends Component {
@@ -21,6 +21,14 @@ class Login extends Component {
         <Register />
       );
     }
+    const {
+      // touchedEmail,
+      // touchedPassword,
+      // errors,
+      handleBlur,
+      handleChange,
+      // values
+    } = this.props;
 
     return (
       <div className="Login">
@@ -31,10 +39,38 @@ class Login extends Component {
               u-paddingTop u-paddingBottom u-border u-shadowMedium u-roundedPill
             ">
               <p className="u-textCenter u-textLarge u-fontWeightBolder">Login</p>
-              <div className="u-paddingLeftXSmall">Username</div>
-              <Input placeholder="Username" />
-              <div className="u-paddingLeftXSmall">Password</div>
-              <Input placeholder="Password" />
+              <div>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Username</Form.Label>
+                  <Form.Control
+                    name='username'
+                    // value={values.email}
+                    type="text" placeholder="Enter username . . ."
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    // isInvalid={touchedEmail && errors.email}
+                  />
+                  <Feedback type='invalid'>
+                    {/* {errors.email} */}
+                  </Feedback>
+                </Form.Group>
+
+                <Form.Group controlId="formBasicPassword">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control
+                    name='password' 
+                    // value={values.password}
+                    type="password" placeholder="Enter your password . . ."
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    // isInvalid={touchedPassword && errors.password}
+                  />
+                  <Feedback type='invalid'>
+                    {/* {errors.password} */}
+                  </Feedback>
+                </Form.Group>
+              </div>
+
               <div className="u-flex u-flexAlignItemsCenter u-flexJustifyAround">
                 <Button
                   className="Login-registerBtn u-paddingLeft u-paddingRight u-border"

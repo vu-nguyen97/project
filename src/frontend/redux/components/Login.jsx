@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Form, Button } from 'react-bootstrap';
-import Feedback from 'react-bootstrap/Feedback';
+import { Button } from 'react-bootstrap';
+// import Feedback from 'react-bootstrap/Feedback';
 
 import Register from './Register';
 
@@ -21,68 +21,35 @@ class Login extends Component {
         <Register />
       );
     }
-    const {
-      // touchedEmail,
-      // touchedPassword,
-      // errors,
-      handleBlur,
-      handleChange,
-      // values
-    } = this.props;
 
     return (
       <div className="Login">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-4 col-md-3 col-2" />
-            <div className="Login-wrapper col-lg-4 col-md-6 col-8
-              u-paddingTop u-paddingBottom u-border u-shadowMedium u-roundedPill
-            ">
-              <p className="u-textCenter u-textLarge u-fontWeightBolder">Login</p>
-              <div>
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Label>Username</Form.Label>
-                  <Form.Control
-                    name='username'
-                    // value={values.email}
-                    type="text" placeholder="Enter username . . ."
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    // isInvalid={touchedEmail && errors.email}
-                  />
-                  <Feedback type='invalid'>
-                    {/* {errors.email} */}
-                  </Feedback>
-                </Form.Group>
+          <div className="u-width100 u-flex u-flexJustifyCenter u-flexAlignItemsCenter">
+            <div className="Login-wrapper u-border u-shadowMedium">
+              <div className="u-padding">
+                <p className="u-textCenter u-textLarge u-fontWeightBolder">Đăng nhập</p>
+                <div className="input-group u-marginTopSmall">
+                  <span>
+                    <i className="fa fa-user" />
+                  </span>
+                  <input type="text" className="form-control" placeholder="Username" />
+                </div>
+                <div className="input-group u-marginTopSmall">
+                  <span>
+                    <i className="fa fa-lock" />
+                  </span>
+                  <input type="text" className="form-control" placeholder="Password" />
+                </div>
 
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Label>Password</Form.Label>
-                  <Form.Control
-                    name='password' 
-                    // value={values.password}
-                    type="password" placeholder="Enter your password . . ."
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    // isInvalid={touchedPassword && errors.password}
-                  />
-                  <Feedback type='invalid'>
-                    {/* {errors.password} */}
-                  </Feedback>
-                </Form.Group>
-              </div>
-
-              <div className="u-flex u-flexAlignItemsCenter u-flexJustifyAround">
-                <Button
-                  className="Login-registerBtn u-paddingLeft u-paddingRight u-border"
+                <Button className="u-width100 u-marginTopSmall">Đăng nhập</Button>
+                <div className="Login-registerLink u-marginTopSmall u-textRight u-textSmall u-cursorPointer"
                   onClick={() => this.setState({
                     is_show_register_form: true
                   })}
-                  size="sm"
-                  variant="light"
                 >
-                  Register
-                </Button>
-                <Button size="sm" className="u-paddingLeft u-paddingRight">Login</Button>
+                  Tạo tài khoản
+                </div>
               </div>
             </div>
           </div>

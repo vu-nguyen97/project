@@ -1,4 +1,38 @@
-.InputGroup {
+@mixin position-absolute0 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@mixin nav-link {
+  color: $primary;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin hover-primary {
+  background-color: $primary !important;
+  color: white !important;
+}
+
+.input-group {
+  span{
+    position: absolute;
+    margin: 0 $spacer-sm;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+  }
+  input{
+    padding-left: 38px;
+  }
+}
+
+.form-control {
   &::placeholder {
     font-size: 0.8rem !important;
   }

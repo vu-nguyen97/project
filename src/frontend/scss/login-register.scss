@@ -1,16 +1,9 @@
-@mixin hover-primary {
-  background-color: $primary !important;
-  color: white !important;
-}
-
 .Login {
   &-wrapper {
     background-color: $gray-300;
   }
-  &-registerBtn {
-    &:hover {
-      @include hover-primary();
-    }
+  &-registerLink {
+    @include nav-link();
   }
 }
 
@@ -18,15 +11,13 @@
   &-wrapper {
     background-color: $gray-300;
   }
-  &-loginBtn {
-    &:hover {
-      @include hover-primary();
-    }
+  &-loginLink {
+    @include nav-link();
   }
 }
 
-.form-control {
-  &::placeholder {
-    font-size: 0.8rem !important;
+@media (min-width: 768px) {
+  .Login-wrapper, .Register-wrapper {
+    min-width: 350px;
   }
 }

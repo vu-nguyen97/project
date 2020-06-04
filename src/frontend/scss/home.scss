@@ -1,0 +1,74 @@
+.Home {
+  &-banner {
+    position: relative;
+    // padding-bottom: calc(146/1150 * 100%);
+    height: 90px;
+    >img {
+      @include position-absolute0;
+    }
+
+    &-avatar {
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      top: 10px;
+      right: 110px;
+    }
+  }
+
+  &-layout {
+    flex-grow: 1;
+    &-sidebarLeft {
+      flex: 0 0 200px;
+    }
+    &-main {
+      flex-grow: 1;
+    }
+    &-sidebarRight {
+      background-color: #F2F4FF;
+      flex: 0 0 250px;
+    }
+  }
+
+  .SidebarRight {
+    &-notifications {
+      &:hover {
+        color: $black-700;
+        text-decoration: underline;
+      }
+    }
+    &-viewMore {
+      &:hover {
+        color: $black-700;
+        text-decoration: underline;
+      }
+    }
+    $color1: #FFBA49;
+    $color2: #FFCDB2;
+    $color3: #078EED;
+    &-event1 {
+      height: 2.8rem;
+      width: 2.8rem;
+      background-color: lighten($color1, 30%);
+      &-icon {
+        color: $color1;
+      }
+    }
+    &-event2 {
+      height: 2.8rem;
+      width: 2.8rem;
+      background-color: lighten($color2, 12%);
+      &-icon {
+        color: $color2;
+      }
+    }
+    &-event3 {
+      height: 2.8rem;
+      width: 2.8rem;
+      background-color: lighten($color3, 48%);
+      &-icon {
+        color: $color3;
+      }
+    }
+  }
+}

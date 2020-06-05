@@ -2,6 +2,8 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown, FormControl } from 'react-bootstrap';
 
 import SidebarRight from './SidebarRight';
+import CourseList from './CourseList';
+import CourseFilter from './CourseFilter';
 import Footer from './Footer';
 
 import avatar_img from '../../test/default-avatar.png';
@@ -9,6 +11,7 @@ import avatar_img from '../../test/default-avatar.png';
 
 class Home extends React.Component {
 	render() {
+		// Fixme
 		const data_fake = [
 			'Bài 1','Bài 1','Bài 1','Bài 1','Bài 1','Bài 1','Bài 1','Bài 1','Bài 1','Bài 1'
 		]
@@ -44,7 +47,7 @@ class Home extends React.Component {
 						<FormControl type="text" placeholder="Search" className="mr-sm-2" />
 					</Navbar>
 				</div>
-			
+
 				<div className="Home-layout u-flex u-marginTop">
 					<div className="Home-layout-sidebarLeft u-paddingLeftSmall">
 						<div className="Home-layout-sidebarLeft-nav u-paddingSmall u-border">
@@ -62,7 +65,10 @@ class Home extends React.Component {
 							</div>
 						</div>
 					</div>
-					<div className="Home-layout-main"></div>
+					<div className="Home-layout-main u-padding u-paddingTop0">
+						<CourseFilter />
+						<CourseList />
+					</div>
 					<div className="Home-layout-sidebarRight u-flex u-flexCol u-paddingSmall u-roundedPill u-marginRight">
 						<SidebarRight />
 					</div>

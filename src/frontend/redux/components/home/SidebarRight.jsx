@@ -21,7 +21,7 @@ export default class SidebarRight extends Component {
         <div className="u-marginBottom">
           <div className="u-marginBottomSmall u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
             <div className="u-fontWeightBolder u-textPrimary2">Sự kiện sắp tới</div>
-            <div className="SidebarRight-viewMore u-cursorPointer u-textXSmall">Xem thêm</div>
+            <div className="SidebarRight-viewMore u-textMuted u-cursorPointer u-textXSmall">Xem thêm</div>
           </div>
           <div className="u-padding u-bgWhite u-roundedPill u-marginBottomSmall u-textSmall u-flex">
             <div className="SidebarRight-event1 u-paddingXSmall u-rounded u-flex u-flexJustifyCenter u-flexAlignItemsCenter">

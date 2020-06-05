@@ -7,7 +7,7 @@ import {
   Link
 } from "react-router-dom";
 
-import Home from '../redux/components/Home.jsx';
+import Home from '../redux/components/home/Home.jsx';
 import User from '../redux/components/User.jsx';
 import Login from '../redux/components/Login.jsx';
 
@@ -25,10 +25,11 @@ class App extends React.Component {
                   <li><Link to="/users">Users</Link></li>
                 </ul>
                 :
-                <ul>
-                  <li><Link to="/home">Home</Link></li>
-                  <li><Link to="/login">login</Link></li>
-                </ul>
+                <Link to="/login" />
+                // <ul>
+                //   <li><Link to="/home" /></li>
+                //   <li><Link to="/login" /></li>
+                // </ul>
             }
           </nav>
 

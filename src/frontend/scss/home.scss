@@ -25,7 +25,7 @@
       flex-grow: 1;
     }
     &-sidebarRight {
-      background-color: #F2F4FF;
+      background-color: $tertiary;
       flex: 0 0 250px;
     }
   }
@@ -39,7 +39,7 @@
     }
     &-viewMore {
       &:hover {
-        color: $black-700;
+        color: $secondary !important;
         text-decoration: underline;
       }
     }
@@ -68,6 +68,19 @@
       background-color: lighten($color3, 48%);
       &-icon {
         color: $color3;
+      }
+    }
+  }
+
+  .CoureList {
+    &-avatarCourse {
+      overflow: hidden;
+      width: 180px;
+      height: 180px;
+    }
+    &-course {
+      &-icons {
+        flex: 0 0 120px;
       }
     }
   }

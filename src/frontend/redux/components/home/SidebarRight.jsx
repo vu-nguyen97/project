@@ -7,7 +7,10 @@ export default class SidebarRight extends Component {
     return (
       <div className="u-flex u-flexCol">
         <div className="u-marginBottom u-textSmall">
-          <div className="u-fontWeightBolder u-textPrimary2">Thông báo mới</div>
+          <div className="u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+            <div className="u-fontWeightBolder u-textPrimary2">Thông báo mới</div>
+            <div className="SidebarRight-viewMore u-textMuted u-cursorPointer u-textXSmall">Xem thêm</div>
+          </div>
           <div className="SidebarRight-notifications u-padding u-bgWhite u-roundedPill u-marginTopSmall u-cursorPointer">
             <span className="u-fontWeightBolder">[ĐTĐH]</span>&nbsp;Lịch mở đăng ký xét tốt nghiệp đợt 20192-A 08h00 ngày 02/06/2020
           </div>
@@ -23,19 +26,19 @@ export default class SidebarRight extends Component {
             <div className="u-fontWeightBolder u-textPrimary2">Sự kiện sắp tới</div>
             <div className="SidebarRight-viewMore u-textMuted u-cursorPointer u-textXSmall">Xem thêm</div>
           </div>
-          <div className="u-padding u-bgWhite u-roundedPill u-marginBottomSmall u-textSmall u-flex">
+          <div className="u-paddingSmall u-bgWhite u-roundedPill u-marginBottomSmall u-textSmall u-flex">
             <div className="SidebarRight-event1 u-paddingXSmall u-rounded u-flex u-flexJustifyCenter u-flexAlignItemsCenter">
               <i className="SidebarRight-event1-icon fa fa-calendar-o fa-2x" />
             </div>
             <div className="u-height100 u-paddingSmall">test</div>
           </div>
-          <div className="u-padding u-bgWhite u-roundedPill u-marginBottomSmall u-textSmall u-flex u-marginTopSmall">
+          <div className="u-paddingSmall u-bgWhite u-roundedPill u-marginBottomSmall u-textSmall u-flex u-marginTopSmall">
             <div className="SidebarRight-event2 u-paddingXSmall u-rounded u-flex u-flexJustifyCenter u-flexAlignItemsCenter">
               <i className="SidebarRight-event2-icon fa fa-calendar-o fa-2x" />
             </div>
             <div className="u-height100 u-paddingSmall">test</div>
           </div>
-          <div className="u-padding u-bgWhite u-roundedPill u-marginBottomSmall u-textSmall u-flex u-marginTopSmall">
+          <div className="u-paddingSmall u-bgWhite u-roundedPill u-marginBottomSmall u-textSmall u-flex u-marginTopSmall">
             <div className="SidebarRight-event3 u-paddingXSmall u-rounded u-flex u-flexJustifyCenter u-flexAlignItemsCenter">
               <i className="SidebarRight-event3-icon fa fa-calendar-o fa-2x" />
             </div>

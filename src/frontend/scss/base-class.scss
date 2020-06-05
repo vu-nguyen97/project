@@ -27,7 +27,7 @@ $danger : #f03d3d !default;
 
 $secondary : #00187A;
 $tertiary  : #F2F4FF;
-// $quaternary: #2f2f2f;
+$quaternary: #FFD95C;
 // $quinary   : #4e4e4e;
 // $senary    : #f9f9f9;
 // ===================================Border=================================
@@ -59,21 +59,21 @@ $font-size-xsm:   0.78rem !default;
 $font-size-sm:   0.9rem !default;
 
 .u-textBase {
-  font-size: $font-size-base;
+  font-size: $font-size-base !important;
 }
 .u-textSmall {
-  font-size: $font-size-sm;
+  font-size: $font-size-sm !important;
 }
 .u-textXSmall {
-  font-size: $font-size-xsm;
+  font-size: $font-size-xsm !important;
 }
 .u-textLarge {
-  font-size: $font-size-lg;
+  font-size: $font-size-lg !important;
 }
 
 .u-textWhite { color: white !important; }
 .u-textBlack { color: $black-800 !important; }
-.u-textMuted { color: $gray-800 !important; }
+.u-textMuted { color: $black-400 !important; }
 .u-textPrimary { color: $primary; }
 .u-textPrimary2 { color: $secondary; }
 

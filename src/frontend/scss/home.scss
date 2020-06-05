@@ -75,12 +75,21 @@
   .CoureList {
     &-avatarCourse {
       overflow: hidden;
-      width: 180px;
-      height: 180px;
+      width: 190px;
+      height: 190px;
     }
-    &-course {
-      &-icons {
+    &-content {
+      &--right {
         flex: 0 0 120px;
+      }
+      .fa-star.custom {
+        color: $quaternary;
+      }
+      &-tag1 {
+        color: $primary;
+      }
+      &-tag2 {
+        color: #A25FBF;
       }
     }
   }

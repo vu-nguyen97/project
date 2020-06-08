@@ -119,13 +119,11 @@ $box-shadow-lighter:   0 1px 1px 0 rgba(10, 31, 68, 0.08), $shadow-low !default;
 $box-shadow-light:      0 3px 4px 0 rgba(10, 31, 68, 0.1), $shadow-low !default;
 $box-shadow-medium:   0 8px 10px 0 rgba(10, 31, 68, 0.1), $shadow-low !default;
 $box-shadow-dark:     0 18px 18px 0 rgba(10, 31, 68, 0.12), $shadow-high !default;
-$box-shadow-darker:  0 26px 26px 0 rgba(10, 31, 68, 0.12), $shadow-high !default;
 
 .u-shadowLighter { box-shadow: $box-shadow-lighter !important; }
 .u-shadowLight { box-shadow: $box-shadow-light !important; }
 .u-shadowMedium { box-shadow: $box-shadow-medium !important; }
 .u-shadowDark { box-shadow: $box-shadow-dark !important; }
-.u-shadowDarker { box-shadow: $box-shadow-darker !important; }
 // ===================================Size=================================
 
 .u-width100 {

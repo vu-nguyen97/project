@@ -11,7 +11,7 @@ import Home from '../redux/components/home/Home';
 import User from '../redux/components/User';
 import Login from '../redux/components/Login';
 import CourseDetail from '../redux/components/CourseDetail';
-// import Lesson from '../redux/components/Lesson.jsx';
+import Lesson from '../redux/components/Lesson.jsx';
 
 
 class App extends React.Component {
@@ -41,7 +41,7 @@ class App extends React.Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/course" component={CourseDetail} />
-            <Route exact path="/lesson" component={Home} />
+            <Route exact path="/lesson" component={Lesson} />
           </Switch>
         </div>
       </Router>

@@ -13,12 +13,24 @@
       @include position-absolute0;
     }
 
-    &-avatar {
-      height: 40px;
-      width: 40px;
+    &-title {
       position: absolute;
-      top: 10px;
-      right: 110px;
+      height: 100%;
+    }
+
+    &-setting {
+      position: absolute;
+      height: 100%;
+      right: 0;
+      &-avatar {
+        width: 40px;
+        height: 40px;
+      }
+      .dropdown-toggle {
+        color: black !important;
+        background-color: transparent !important;
+        border: 0;
+      }
     }
   }
 
@@ -29,6 +41,20 @@
     }
     &-main {
       flex-grow: 1;
+
+      .dropdown-toggle {
+        border-radius: 1.5rem !important;
+        font-size: $font-size-sm !important;
+        &-light {
+          background-color: $tertiary !important;
+          border: 0 !important;
+          color: $gray-800 !important;
+        }
+      }
+      .dropdown-menu {
+        // border-radius: $rounded !important;
+        min-width: 0 !important;
+      }
     }
     &-sidebarRight {
       background-color: $tertiary;
@@ -78,7 +104,7 @@
     }
   }
 
-  .CoureList {
+  .HomeMain {
     &-avatarCourse {
       overflow: hidden;
       width: 190px;
@@ -96,7 +122,7 @@
       }
       &-content {
         &:hover {
-          .CoureList-main-content-link {
+          .HomeMain-main-content-link {
             text-decoration: underline;
             color: $primary-dark;
           }

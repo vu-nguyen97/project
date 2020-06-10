@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Rating from 'react-rating';
 import { Button, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import Modal from '../common/Modal';
-import Home from './home/Home';
+import Alert from '../common/Alert';
 
 const RATES = {
   1: 'Rất tệ',
@@ -37,30 +38,6 @@ export default class CourseDetail extends Component {
 
   render() {
     const { rate, rate_name, alert } = this.state;
-    
-    const children = (
-      <div className="u-border u-padding u-rounded">
-        <div className="u-fontWeightBolder u-textBase">
-          Mạng máy tính
-        </div>
-        <div className="u-marginTopSmall">
-          <span>Giới thiệu: </span>
-          <span className="u-textSmall">Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. </span>
-        </div>
-        <div className="u-marginTopXSmall">
-          <span>Nội dung: </span>
-          <span className="u-textSmall">Tin học căn bản: Biểu diễn thông tin trong máy tính. Hệ thống máy tính. Hệ điều hành Linux. Lập trình bằng ngôn ngữ C: Tổng quan về ngôn ngữ C. Kiểu dữ liệu, biểu thức và cấu trúc lập trình trong C. Các kiểu dữ liệu phức tạp: con trỏ, mảng và xâu trong C. Mảng. Cấu trúc. Tệp dữ liệu.</span>
-        </div>
-        <Button
-          variant="outline-primary"
-          onClick={() => this.setState({
-            is_show_rating_modal: true
-          })
-        }>
-          Đánh giá khóa học
-        </Button>
-      </div>
-    );
 
     const content_modal = (
       <div className="u-paddingXSmall">
@@ -111,7 +88,69 @@ export default class CourseDetail extends Component {
             modalFooter={modalFooter}
           />
         }
-        <Home children={children} alert={alert} />
+        {
+          alert &&
+          <div className="row">
+            <div className="col-6" />
+            <div className="col-6">
+              <Alert
+                className="u-marginTopSmall u-marginRight"
+                variant="success"
+                content={alert}
+              />
+            </div>
+          </div>
+        }
+        <div className="u-border u-padding u-rounded">
+          <div className="u-fontWeightBolder u-textBase">
+            Mạng máy tính
+          </div>
+          <div className="u-marginTopSmall">
+            <span>Giới thiệu: </span>
+            <span className="u-textSmall">Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. </span>
+          </div>
+          <div className="u-marginTopXSmall">
+            <span>Mã học phần: </span>
+            <span>IT1240</span>
+          </div>
+          <div>Viện: Công nghệ thông tin và truyền thông</div>
+          <div className="u-marginTopXSmall">Kỳ 20192</div>
+          <div className="u-marginTopXSmall">
+            <span>Số sinh viên: </span>
+            <span>50</span>
+          </div>
+          {/* <div className="u-marginTopXSmall">
+            <span>Nội dung: </span>
+            <span className="u-textSmall">Tin học căn bản: Biểu diễn thông tin trong máy tính. Hệ thống máy tính. Hệ điều hành Linux. Lập trình bằng ngôn ngữ C: Tổng quan về ngôn ngữ C. Kiểu dữ liệu, biểu thức và cấu trúc lập trình trong C. Các kiểu dữ liệu phức tạp: con trỏ, mảng và xâu trong C. Mảng. Cấu trúc. Tệp dữ liệu.</span>
+          </div> */}
+          <div className="u-marginTopXSmall">
+            <span>Giảng viên hướng dẫn: </span>
+            <span>Ila Wyman</span>
+          </div>
+          <a href="/#" className="u-marginTopXSmall">Xem danh sách lớp sinh viên</a>
+          <div className="u-marginTopXSmall">
+            <div>Danh sách bài học</div>
+            <ul>
+              {/* Fixme */}
+              <li>
+                <Link to="/lesson">Tuần 1</Link>
+              </li>
+              <li><a href="/#">Tuần 2</a></li>
+              <li><a href="/#">Tuần 3</a></li>
+              <li><a href="/#">Tuần 4</a></li>
+            </ul>
+          </div>
+          <div className="u-marginTopXSmall u-flex u-flexJustifyEnd">
+            <Button
+              variant="outline-primary"
+              onClick={() => this.setState({
+                is_show_rating_modal: true
+              })
+            }>
+              Đánh giá khóa học
+            </Button>
+          </div>
+        </div>
       </div>
     );
   }

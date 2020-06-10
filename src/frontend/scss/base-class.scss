@@ -25,6 +25,8 @@ $success: #22c993 !default;
 $warning: #ffad0d !default;
 $danger : #f03d3d !default;
 
+$primary-dark: #005ff1 !default;
+
 $secondary : #00187A;
 $tertiary  : #F2F4FF;
 $quaternary: #FFD95C;
@@ -98,6 +100,7 @@ $font-size-sm:   0.9rem !default;
 .u-textLowercase  { text-transform: lowercase !important; }
 .u-textUppercase  { text-transform: uppercase !important; }
 .u-textCapitalize { text-transform: capitalize !important; }
+.u-textDecorationNone { text-decoration: none !important; }
 // ===================================Font=================================
 
 $font-weight-lighter:         lighter !default;

@@ -1,4 +1,10 @@
 .Home {
+  &-header {
+    .form-control {
+      max-width: 260px;
+      border-radius: 1.2rem !important;
+    }
+  }
   &-banner {
     position: relative;
     // padding-bottom: calc(146/1150 * 100%);
@@ -78,18 +84,23 @@
       width: 190px;
       height: 190px;
     }
-    &-content {
+    &-main {
       &--right {
         flex: 0 0 120px;
-      }
-      .fa-star.custom {
-        color: $quaternary;
       }
       &-tag1 {
         color: $primary;
       }
       &-tag2 {
         color: #A25FBF;
+      }
+      &-content {
+        &:hover {
+          .CoureList-main-content-link {
+            text-decoration: underline;
+            color: $primary-dark;
+          }
+        }
       }
     }
   }

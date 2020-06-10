@@ -1,21 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Navbar, Nav, NavDropdown, FormControl } from 'react-bootstrap';
 
 import SidebarRight from './SidebarRight';
+// import SidebarLeft from './SidebarLeft';
 import CourseList from './CourseList';
 import CourseFilter from './CourseFilter';
 import Footer from './Footer';
 
+import Alert from '../../common/Alert';
 import avatar_img from '../../test/default-avatar.png';
 // import banner_img from '../../test/banner4.png';
 
 class Home extends React.Component {
 	render() {
-		// Fixme
-		const data_fake = [
-			'Bài 1','Bài 1','Bài 1','Bài 1','Bài 1','Bài 1','Bài 1','Bài 1','Bài 1','Bài 1'
-		]
-		
+		const { children, alert } = this.props;
+
     return (
       <div className="Home">
 				<div className="Home-banner u-bgMedium">
@@ -47,31 +47,34 @@ class Home extends React.Component {
 						<FormControl type="text" placeholder="Search" className="mr-sm-2" />
 					</Navbar>
 				</div>
-
-				<div className="Home-layout u-flex u-marginTop">
-					<div className="Home-layout-sidebarLeft u-paddingLeftSmall">
-						<div className="Home-layout-sidebarLeft-nav u-paddingSmall u-border">
-							<div>Trang chủ</div>
-							<div className="u-cursorPointer">
-								<i className="fa fa-angle-down u-marginRightSmall" />Khóa học của tôi
-							</div>
-							<div className="SidebarLeft-courses u-marginLeft">
-								Mang may tinh
-								{
-									data_fake.map((course, i) =>
-										<div key={i} className="u-marginLeft">{course}</div>
-									)
-								}
+				<div className="">
+					{
+						alert &&
+						<div className="row">
+							<div className="col-6" />
+							<div className="col-6">
+								<Alert
+									className="u-marginTopSmall u-marginRight"
+									variant="success"
+									content={alert}
+								/>
 							</div>
 						</div>
-					</div>
-					<div className="Home-layout-main u-padding u-paddingTop0">
-						<CourseFilter />
-						<CourseList />
-					</div>
-					<div className="Home-layout-sidebarRight u-flex u-flexCol u-paddingSmall u-roundedPill u-marginRight">
-						<SidebarRight />
-					</div>
+					}
+				</div>
+
+				<div className="Home-layout u-flex u-marginTop">
+					{/* <SidebarLeft /> */}
+					{
+						children ?
+							<div className="Home-layout-main u-padding u-paddingTop0">{children}</div>
+							:
+							<div className="Home-layout-main u-padding u-paddingTop0">
+								<CourseFilter />
+								<CourseList />
+							</div>
+					}
+					<SidebarRight />
 				</div>
         
 				<div className="Home-footer">
@@ -80,6 +83,11 @@ class Home extends React.Component {
       </div>
       ); 
 	}
+}
+
+Home.propTypes = {
+	children: PropTypes.node,
+	alert: PropTypes.string,
 }
 
 export default Home;

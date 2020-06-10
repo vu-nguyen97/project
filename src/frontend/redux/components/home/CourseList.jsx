@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-
 import Rating from 'react-rating';
+import { Link } from 'react-router-dom';
 
 import bg1 from '../../test/1.png';
 import bg2 from '../../test/2.png';
@@ -8,26 +8,27 @@ import bg3 from '../../test/3.png';
 
 export default class CourseList extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
-      rate: 4
+
     }
   }
 
   render() {
-    const { rate } = this.state;
-
+    const rate = 4;
     return (
       <div className="CoureList u-textSmall">
         <div className="u-flex u-marginTop u-shadowLight u-rounded">
           <div className="CoureList-avatarCourse u-rounded">
             <img className="u-imgCover" src={bg1} alt="ảnh đại diện khóa học" />
           </div>
-          <div className="CoureList-content u-paddingSmall u-paddingLeft u-flexGrow1">
+          <div className="CoureList-main u-paddingSmall u-paddingLeft u-flexGrow1">
             <div className="u-flex u-flexJustifyBetween u-height100">
-              <div>
-                <div className="u-fontWeightBolder u-textBase">Mạng máy tính</div>
+              <div className="CoureList-main-content">
+                <Link to="/course" className="CoureList-main-content-link u-fontWeightBolder u-textBase">
+                  Mạng máy tính
+                </Link>
                 <div className="u-marginTopSmall u-textTruncate2 u-textMuted">
                   Dolores maiores et natus ut.
                   Et commodi aperiam non nostrum ut.
@@ -40,17 +41,17 @@ export default class CourseList extends Component {
                 </div>
                 <div className="u-flex">
                   <div className="Tag Tag--pill u-textXSmall u-marginTopSmall">
-                    <span className="CoureList-content-tag1">20192</span>
+                    <span className="CoureList-main-tag1">20192</span>
                   </div>
                   <div className="Tag Tag--pill u-textXSmall u-marginTopSmall">
-                    <span className="CoureList-content-tag2">VCNTTVTT</span>
+                    <span className="CoureList-main-tag2">CNTT&TT</span>
                   </div>
                 </div>
               </div>
-              <div className="CoureList-content--right u-flex u-flexCol u-flexJustifyBetween">
+              <div className="CoureList-main--right u-flex u-flexCol u-flexJustifyBetween">
                 <div className="u-flex u-flexJustifyEnd">
-                  <i className="u-marginRight fa fa-2x fa-bookmark-o" />
-                  <i className="u-marginRightSmall fa fa-2x fa-ellipsis-v" />
+                  <i className="u-cursorPointer u-marginRight fa fa-2x fa-bookmark-o" />
+                  <i className="u-cursorPointer u-marginRightSmall fa fa-2x fa-ellipsis-v" />
                 </div>
                 <div className="u-flex u-flexCol u-flexAlignItemsEnd u-textMuted u-textXSmall u-marginRightSmall u-marginBottomXSmall">
                   <div className="u-flex">
@@ -60,7 +61,6 @@ export default class CourseList extends Component {
                       readonly={rate}
                       emptySymbol="fa fa-star-o"
                       fullSymbol="fa fa-star custom"
-                      onChange={rate => this.setState({ rate })}
                     />
                     <div className="u-marginLeftXSmall">4.0</div>
                   </div>
@@ -70,14 +70,15 @@ export default class CourseList extends Component {
             </div>
           </div>
         </div>
+
         <div className="u-flex u-marginTop u-shadowLight u-rounded">
           <div className="CoureList-avatarCourse u-rounded">
             <img className="u-imgCover" src={bg2} alt="ảnh đại diện khóa học" />
           </div>
-          <div className="CoureList-content u-paddingLeft u-paddingSmall u-flexGrow1">
+          <div className="CoureList-main u-paddingLeft u-paddingSmall u-flexGrow1">
             <div className="u-flex u-flexJustifyBetween">
               <div className="u-fontWeightBolder u-textBase">Mạng máy tính</div>
-              <div className="CoureList-content--right u-flex u-flexJustifyEnd">
+              <div className="CoureList-main--right u-flex u-flexJustifyEnd">
                 <i className="u-marginRight fa fa-2x fa-bookmark-o" />
                 <i className="u-marginRightSmall fa fa-2x fa-ellipsis-v" />
               </div>
@@ -88,10 +89,10 @@ export default class CourseList extends Component {
           <div className="CoureList-avatarCourse u-rounded">
             <img className="u-imgCover" src={bg3} alt="ảnh đại diện khóa học" />
           </div>
-          <div className="CoureList-content u-paddingLeft u-paddingSmall u-flexGrow1">
+          <div className="CoureList-main u-paddingLeft u-paddingSmall u-flexGrow1">
             <div className="u-flex u-flexJustifyBetween">
               <div className="u-fontWeightBolder u-textBase">Mạng máy tính</div>
-              <div className="CoureList-content--right u-flex u-flexJustifyEnd">
+              <div className="CoureList-main--right u-flex u-flexJustifyEnd">
                 <i className="u-marginRight fa fa-2x fa-bookmark-o" />
                 <i className="u-marginRightSmall fa fa-2x fa-ellipsis-v" />
               </div>

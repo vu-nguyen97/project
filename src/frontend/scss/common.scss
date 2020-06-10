@@ -31,6 +31,19 @@
   border-radius: 1.2rem;
 }
 
+.Alert {
+  &-icon {
+    position: absolute;
+    top: $spacer-xs;
+    right: $spacer-sm;
+  }
+
+  visibility: hidden;
+  transition: visibility 2s ease-in-out;
+  &.is-visible {
+    visibility: visible;
+  }
+}
 // =========================================================================
 // override css of react-bootstrap and react-strap
 .input-group {
@@ -51,12 +64,26 @@
   &::placeholder {
     font-size: 0.8rem !important;
   }
-  max-width: 240px;
-  border-radius: 1.2rem !important;
 }
 
 .fa-2x {
   font-size: 1.15rem;
+}
+.fa-3x {
+  font-size: 1.8rem;
+}
+.fa-star.custom {
+  color: $quaternary;
+}
+
+.alert {
+  padding: $spacer-xs $spacer-sm !important;
+}
+
+.btn {
+  &-secondary {
+    background-color: $gray-900 !important;
+  }
 }
 
 .dropdown-toggle {

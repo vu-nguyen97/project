@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Rating from 'react-rating';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import Modal from '../common/Modal';
-import Alert from '../common/Alert';
+import { addAlert } from '../actions'; 
 
 const RATES = {
   1: 'Rất tệ',
@@ -14,15 +15,14 @@ const RATES = {
   5: 'Rất hay'
 }
 
-export default class CourseDetail extends Component {
+class CourseDetail extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       rate: null,
       is_show_rating_modal: false,
-      rate_name: null,
-      alert: null
+      rate_name: null
     }
 
     this.submitRatingCourse = this.submitRatingCourse.bind(this);
@@ -32,12 +32,12 @@ export default class CourseDetail extends Component {
     //Fixme
     this.setState({
       is_show_rating_modal: false,
-      alert: 'Cảm ơn sự đánh giá của bạn!'
     });
+    this.props.onAddAlert('Cảm ơn sự đánh giá của bạn!');
   }
 
   render() {
-    const { rate, rate_name, alert } = this.state;
+    const { rate, rate_name } = this.state;
 
     const content_modal = (
       <div className="u-paddingXSmall">
@@ -88,19 +88,7 @@ export default class CourseDetail extends Component {
             modalFooter={modalFooter}
           />
         }
-        {
-          alert &&
-          <div className="row">
-            <div className="col-6" />
-            <div className="col-6">
-              <Alert
-                className="u-marginTopSmall u-marginRight"
-                variant="success"
-                content={alert}
-              />
-            </div>
-          </div>
-        }
+
         <div className="u-border u-padding u-rounded">
           <div className="u-fontWeightBolder u-textBase">
             Mạng máy tính
@@ -155,3 +143,11 @@ export default class CourseDetail extends Component {
     );
   }
 }
+
+const mapStateToProps = () => ({});
+
+const mapDispatchToProps = dispatch => ({
+  onAddAlert: (alert) => dispatch(addAlert(alert))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(CourseDetail);

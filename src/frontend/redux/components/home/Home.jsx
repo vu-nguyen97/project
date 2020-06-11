@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import { Navbar, Nav, NavDropdown, FormControl } from 'react-bootstrap';
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
 
@@ -8,6 +9,7 @@ import SidebarRight from './SidebarRight';
 import HomeMain from './HomeMain';
 import Footer from './Footer';
 
+import Alert from '../../common/Alert';
 import avatar_img from '../../test/default-avatar.png';
 // import banner_img from '../../test/banner4.png';
 
@@ -22,6 +24,8 @@ class Home extends React.Component {
 	}
 
 	render() {
+		const { alert } = this.props;
+
 		const {
 			is_show_setting_acc_dropdown,
 			is_show_edit_profile_form,
@@ -93,6 +97,23 @@ class Home extends React.Component {
 					</Navbar>
 				</div>
 
+				{
+					alert &&
+					<div className="Home-alert">
+						<div className="row">
+							<div className="col-3" />
+							<div className="col-6">
+								<Alert
+									className="u-marginTopSmall"
+									variant="success"
+									content={alert}
+									icon=""
+								/>
+							</div>
+						</div>
+					</div>
+				}
+
 				<div className="Home-layout u-flex u-marginTop">
 					{/* <SidebarLeft /> */}
 					{home_main}
@@ -111,4 +132,8 @@ Home.propTypes = {
 	children: PropTypes.node
 }
 
-export default Home;
+const mapStateToProps = state => ({
+	alert: state.alert
+});
+
+export default connect(mapStateToProps)(Home);

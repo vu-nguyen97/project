@@ -8,19 +8,12 @@ class CommonAlert extends Component {
     super(props);
 
     this.state = {
-      is_show_alert: true,
-      is_visible_alert: true
+      is_show_alert: true
     }
   }
 
   componentDidMount() {
     if (this.state.is_show_alert === true) {
-      setTimeout(() => {
-        this.setState({
-          is_visible_alert: false
-        })
-      }, 3000);
-      //Fixme
       setTimeout(() => {
         this.setState({
           is_show_alert: false
@@ -46,7 +39,6 @@ class CommonAlert extends Component {
           <Alert variant={variant}
             className={ClassNames(
               'Alert',
-              {'is-visible': this.state.is_visible_alert},
               className
             )}
           >

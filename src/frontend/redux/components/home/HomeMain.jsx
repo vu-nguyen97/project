@@ -35,11 +35,11 @@ class HomeMain extends Component {
           </div>
           <div className="HomeMain-main u-paddingSmall u-paddingLeft u-flexGrow1">
             <div className="u-flex u-flexJustifyBetween u-height100">
-              <div className="HomeMain-main-content u-cursorPointer">
+              <div className="HomeMain-main-content">
                 <div onClick={() => this.setState({
                   is_show_course_detail: true
                 })}
-                  className="HomeMain-main-content-link u-fontWeightBolder u-textBase"
+                  className="HomeMain-main-content-link u-fontWeightBolder u-textBase u-cursorPointer"
                 >
                   Mạng máy tính
                 </div>

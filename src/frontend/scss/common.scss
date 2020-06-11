@@ -37,12 +37,6 @@
     top: $spacer-xs;
     right: $spacer-sm;
   }
-
-  visibility: hidden;
-  transition: visibility 2s ease-in-out;
-  &.is-visible {
-    visibility: visible;
-  }
 }
 // =========================================================================
 // override css of react-bootstrap and react-strap

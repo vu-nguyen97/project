@@ -1,12 +1,24 @@
-.RatingModal {
-  .modal-dialog {
-    width: 320px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    .form-group {
-      margin-bottom: $spacer-xs;
+.CourseDetail {
+  &-ratingModal {
+    .modal-dialog {
+      width: 320px;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      .form-group {
+        margin-bottom: $spacer-xs;
+      }
+    }
+  }
+  &-table {
+    tr {
+      td {
+        padding: $spacer-xs;
+        &:first-child {
+          width: 180px;
+        }
+      }
     }
   }
 }

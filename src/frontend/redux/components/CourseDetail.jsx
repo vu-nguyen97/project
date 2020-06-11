@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Rating from 'react-rating';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Table } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -74,11 +74,11 @@ class CourseDetail extends Component {
     );
 
     return (
-      <div>
+      <div className="CourseDetail">
         {
           this.state.is_show_rating_modal &&
           <Modal
-            className="RatingModal"
+            className="CourseDetail-ratingModal"
             headerName="Đánh giá khóa học"
             headerClassName="u-fontWeightBolder"
             content={content_modal}
@@ -93,41 +93,46 @@ class CourseDetail extends Component {
           <div className="u-fontWeightBolder u-textBase">
             Mạng máy tính
           </div>
+
+          <Table className="CourseDetail-table u-marginTopSmall" striped bordered hover>
+            <tbody>
+              <tr>
+                <td>Giới thiệu</td>
+                <td>Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. </td>
+              </tr>
+              <tr>
+                <td>Mã học phần</td>
+                <td>IT1240</td>
+              </tr>
+              <tr>
+                <td>Viện</td>
+                <td>Công nghệ thông tin và truyền thông</td>
+              </tr>
+              <tr>
+                <td>Số sinh viên</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Giảng viên hướng dẫn</td>
+                <td>Ila Wyman</td>
+              </tr>
+            </tbody>
+          </Table>
           <div className="u-marginTopSmall">
-            <span>Giới thiệu: </span>
-            <span className="u-textSmall">Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. </span>
+            <a href="/#">Xem danh sách lớp sinh viên</a>
+            <div className="u-marginTopXSmall">
+              <div>Danh sách bài học</div>
+              <ul>
+                <li>
+                  <Link to="/lesson">Tuần 1</Link>
+                </li>
+                <li><a href="/#">Tuần 2</a></li>
+                <li><a href="/#">Tuần 3</a></li>
+                <li><a href="/#">Tuần 4</a></li>
+              </ul>
+            </div>
           </div>
-          <div className="u-marginTopXSmall">
-            <span>Mã học phần: </span>
-            <span>IT1240</span>
-          </div>
-          <div>Viện: Công nghệ thông tin và truyền thông</div>
-          <div className="u-marginTopXSmall">Kỳ 20192</div>
-          <div className="u-marginTopXSmall">
-            <span>Số sinh viên: </span>
-            <span>50</span>
-          </div>
-          {/* <div className="u-marginTopXSmall">
-            <span>Nội dung: </span>
-            <span className="u-textSmall">Tin học căn bản: Biểu diễn thông tin trong máy tính. Hệ thống máy tính. Hệ điều hành Linux. Lập trình bằng ngôn ngữ C: Tổng quan về ngôn ngữ C. Kiểu dữ liệu, biểu thức và cấu trúc lập trình trong C. Các kiểu dữ liệu phức tạp: con trỏ, mảng và xâu trong C. Mảng. Cấu trúc. Tệp dữ liệu.</span>
-          </div> */}
-          <div className="u-marginTopXSmall">
-            <span>Giảng viên hướng dẫn: </span>
-            <span>Ila Wyman</span>
-          </div>
-          <a href="/#" className="u-marginTopXSmall">Xem danh sách lớp sinh viên</a>
-          <div className="u-marginTopXSmall">
-            <div>Danh sách bài học</div>
-            <ul>
-              {/* Fixme */}
-              <li>
-                <Link to="/lesson">Tuần 1</Link>
-              </li>
-              <li><a href="/#">Tuần 2</a></li>
-              <li><a href="/#">Tuần 3</a></li>
-              <li><a href="/#">Tuần 4</a></li>
-            </ul>
-          </div>
+
           <div className="u-marginTopXSmall u-flex u-flexJustifyEnd">
             <Button
               variant="outline-primary"

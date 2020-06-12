@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Navbar, Nav, NavDropdown, FormControl } from 'react-bootstrap';
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
@@ -8,6 +7,7 @@ import SidebarRight from './SidebarRight';
 // import SidebarLeft from './SidebarLeft';
 import HomeMain from './HomeMain';
 import Footer from './Footer';
+import UserProfile from '../UserProfile';
 
 import Alert from '../../common/Alert';
 import avatar_img from '../../test/default-avatar.png';
@@ -19,7 +19,7 @@ class Home extends React.Component {
 
 		this.state = {
 			is_show_setting_acc_dropdown: false,
-			is_show_edit_profile_form: false,
+			is_show_edit_profile_form: true,
 		}
 	}
 
@@ -30,19 +30,6 @@ class Home extends React.Component {
 			is_show_setting_acc_dropdown,
 			is_show_edit_profile_form,
 		} = this.state;
-
-		let home_main = null;
-		if (is_show_edit_profile_form) {
-			home_main = (
-				<div>1111</div>
-			);
-		} else {
-			home_main = (
-				<div className="Home-layout-main u-padding u-paddingTop0">
-					<HomeMain />
-				</div>
-			);
-		}
 
     return (
       <div className="Home">
@@ -68,7 +55,13 @@ class Home extends React.Component {
 							>
 								<DropdownToggle caret />
 								<DropdownMenu right>
-									<DropdownItem>Thông tin cá nhân</DropdownItem>
+									<DropdownItem
+										onClick={() => this.setState({
+											is_show_edit_profile_form: true
+										})}
+									>
+										Thông tin cá nhân
+									</DropdownItem>
 									<DropdownItem>Đăng xuất</DropdownItem>
 								</DropdownMenu>
 							</Dropdown>
@@ -114,11 +107,20 @@ class Home extends React.Component {
 					</div>
 				}
 
-				<div className="Home-layout u-flex u-marginTop">
-					{/* <SidebarLeft /> */}
-					{home_main}
-					<SidebarRight />
-				</div>
+				{
+					!is_show_edit_profile_form ? 
+						<div className="Home-layout u-flex u-marginTop">
+							{/* <SidebarLeft /> */}
+							<div className="Home-layout-main u-padding u-paddingTop0">
+								<HomeMain />
+							</div>
+							<SidebarRight />
+						</div>
+						:
+						<div className="Home-layout u-flex u-marginTop">
+							<UserProfile />
+						</div>
+				}
         
 				<div className="Home-footer">
 					<Footer />
@@ -126,10 +128,6 @@ class Home extends React.Component {
       </div>
       ); 
 	}
-}
-
-Home.propTypes = {
-	children: PropTypes.node
 }
 
 const mapStateToProps = state => ({

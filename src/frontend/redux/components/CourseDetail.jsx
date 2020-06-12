@@ -52,7 +52,7 @@ class CourseDetail extends Component {
           />
           <div className="u-textXSmall" style={{height: '16px'}}>{rate_name}</div>
         </div>
-        <Form.Group controlId="exampleForm.ControlTextarea1">
+        <Form.Group>
           <Form.Label>Bình luận</Form.Label>
           <Form.Control as="textarea" />
         </Form.Group>

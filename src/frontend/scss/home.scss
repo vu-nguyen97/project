@@ -135,4 +135,10 @@
       }
     }
   }
+
+  .form-control {
+    &::placeholder {
+      font-size: 0.9rem !important;
+    }
+  }
 }

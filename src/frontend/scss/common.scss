@@ -54,12 +54,6 @@
   }
 }
 
-.form-control {
-  &::placeholder {
-    font-size: 0.8rem !important;
-  }
-}
-
 .fa-2x {
   font-size: 1.15rem;
 }
@@ -77,5 +71,12 @@
 .btn {
   &-secondary {
     background-color: $gray-900 !important;
+  }
+
+  &-outline-primary {
+    &:hover {
+      background-color: lighten($primary, 45%) !important;
+      color: $primary !important;
+    }
   }
 }

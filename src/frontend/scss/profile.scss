@@ -1,0 +1,40 @@
+.UserProfile {
+  &-info {
+    overflow: hidden;
+  }
+
+  &-userCard {
+    overflow: hidden;
+    &-bg {
+      height: 110px;
+    }
+    &-content {
+      $avatar_size: 100px;
+      &-avatar {
+        height: $avatar_size;
+        width: $avatar_size;
+        overflow: hidden;
+        margin-top: calc(0px - #{$avatar_size} / 2);
+      }
+
+      label {
+        &:hover {
+          background-color: $gray-200;
+        }
+      }
+      input {
+        font-size: 0.8rem;
+      }
+      #upload-photo {
+        opacity: 0;
+        position: absolute;
+        z-index: -1;
+      }
+    }
+  }
+
+  .form-label {
+    margin-bottom: 0.2rem;
+    font-size: $font-size-xsm;
+  }
+}

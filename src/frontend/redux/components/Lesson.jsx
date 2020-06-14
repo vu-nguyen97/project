@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import SidebarLeft from './home/SidebarLeft';
+import SidebarLeft from './layout/SidebarLeft';
 
 class Lesson extends Component {
   constructor(props) {

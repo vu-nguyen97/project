@@ -5,7 +5,7 @@ import DatePicker from '../../common/DatePicker.jsx';
 export default class SidebarRight extends Component {
   render() {
     return (
-      <div className="Home-layout-sidebarRight u-flex u-flexCol u-paddingSmall u-roundedPill u-marginRight">
+      <div className="SidebarRight u-flex u-flexCol u-paddingSmall u-roundedPill u-marginRight">
         <div className="u-marginBottom u-textSmall">
           <div className="u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
             <div className="u-fontWeightBolder u-textPrimary2">Thông báo mới</div>

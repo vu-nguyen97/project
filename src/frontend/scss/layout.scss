@@ -1,11 +1,25 @@
-.Home {
+.Layout {
   position: relative;
   &-header {
+    ul {
+      display: flex;
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: $black-300;
+        &:hover {
+          color: $black-700;
+        }
+      }
+    }
+    #search-input {
+      flex: 0 0 260px;
+    }
     .form-control {
-      max-width: 260px;
       border-radius: 1.2rem !important;
     }
   }
+
   &-banner {
     position: relative;
     // padding-bottom: calc(146/1150 * 100%);
@@ -39,12 +53,12 @@
     @include position-absolute0();
   }
 
-  &-layout {
+  &-main {
     flex-grow: 1;
     &-sidebarLeft {
       flex: 0 0 200px;
     }
-    &-main {
+    &-content {
       flex-grow: 1;
 
       .dropdown-toggle {
@@ -61,76 +75,48 @@
         min-width: 0 !important;
       }
     }
-    &-sidebarRight {
+
+    .SidebarRight {
       background-color: $tertiary;
       flex: 0 0 250px;
-    }
-  }
-
-  .SidebarRight {
-    &-notifications {
-      &:hover {
-        color: $black-700;
-        text-decoration: underline;
-      }
-    }
-    &-viewMore {
-      &:hover {
-        color: $secondary !important;
-        text-decoration: underline;
-      }
-    }
-    $color1: #FFBA49;
-    $color2: #FFCDB2;
-    $color3: #078EED;
-    &-event1 {
-      height: 2.8rem;
-      width: 2.8rem;
-      background-color: lighten($color1, 30%);
-      &-icon {
-        color: $color1;
-      }
-    }
-    &-event2 {
-      height: 2.8rem;
-      width: 2.8rem;
-      background-color: lighten($color2, 12%);
-      &-icon {
-        color: $color2;
-      }
-    }
-    &-event3 {
-      height: 2.8rem;
-      width: 2.8rem;
-      background-color: lighten($color3, 48%);
-      &-icon {
-        color: $color3;
-      }
-    }
-  }
-
-  .HomeMain {
-    &-avatarCourse {
-      overflow: hidden;
-      width: 190px;
-      height: 190px;
-    }
-    &-main {
-      &--right {
-        flex: 0 0 120px;
-      }
-      &-tag1 {
-        color: $primary;
-      }
-      &-tag2 {
-        color: #A25FBF;
-      }
-      &-content {
+    
+      &-notifications {
         &:hover {
-          .HomeMain-main-content-link {
-            text-decoration: underline;
-            color: $primary-dark;
-          }
+          color: $black-700;
+          text-decoration: underline;
+        }
+      }
+      &-viewMore {
+        &:hover {
+          color: $secondary !important;
+          text-decoration: underline;
+        }
+      }
+      $color1: #FFBA49;
+      $color2: #FFCDB2;
+      $color3: #078EED;
+      &-event1 {
+        height: 2.8rem;
+        width: 2.8rem;
+        background-color: lighten($color1, 30%);
+        &-icon {
+          color: $color1;
+        }
+      }
+      &-event2 {
+        height: 2.8rem;
+        width: 2.8rem;
+        background-color: lighten($color2, 12%);
+        &-icon {
+          color: $color2;
+        }
+      }
+      &-event3 {
+        height: 2.8rem;
+        width: 2.8rem;
+        background-color: lighten($color3, 48%);
+        &-icon {
+          color: $color3;
         }
       }
     }

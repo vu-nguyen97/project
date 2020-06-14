@@ -263,6 +263,9 @@ $spacer-xl: map-get($spacing-sizes, "XLarge");
 .u-bgMedium {
   background-color: $gray-300;
 }
+.u-bgLight {
+  background-color: $gray-200;
+}
 // ====================================================================
 
 .u-disabled {

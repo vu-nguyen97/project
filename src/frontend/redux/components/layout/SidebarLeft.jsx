@@ -17,8 +17,8 @@ export default class SidebarLeft extends Component {
 		]
 
     return (
-      <div className="Home-layout-sidebarLeft u-paddingLeftSmall">
-        <div className="Home-layout-sidebarLeft-nav u-paddingSmall u-border">
+      <div className="SidebarLeft u-paddingLeftSmall">
+        <div className="SidebarLeft-nav u-paddingSmall u-border">
           <div>Trang chủ</div>
           <div className="u-cursorPointer">
             <i className="fa fa-angle-down u-marginRightSmall" />Khóa học của tôi

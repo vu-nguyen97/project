@@ -10,7 +10,7 @@ import {
 import Home from '../redux/components/home/Home';
 import User from '../redux/components/User';
 import Login from '../redux/components/Login';
-import CourseDetail from '../redux/components/CourseDetail';
+import Course from '../redux/components/Course';
 import Lesson from '../redux/components/Lesson.jsx';
 
 
@@ -40,7 +40,7 @@ class App extends React.Component {
             <Route exact path="/users" component={User} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/home" component={Home} />
-            <Route exact path="/course" component={CourseDetail} />
+            <Route exact path="/course" component={Course} />
             <Route exact path="/lesson" component={Lesson} />
           </Switch>
         </div>

@@ -1,3 +1,30 @@
+.Course {
+  &-avatarCourse {
+    overflow: hidden;
+    width: 190px;
+    height: 190px;
+  }
+  &-main {
+    &--right {
+      flex: 0 0 120px;
+    }
+    &-tag1 {
+      color: $primary;
+    }
+    &-tag2 {
+      color: #A25FBF;
+    }
+    &-content {
+      &:hover {
+        .Course-main-content-link {
+          text-decoration: underline;
+          color: $primary-dark;
+        }
+      }
+    }
+  }
+}
+
 .CourseDetail {
   &-ratingModal {
     .modal-dialog {

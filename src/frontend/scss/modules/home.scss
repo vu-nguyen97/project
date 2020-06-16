@@ -24,3 +24,11 @@
     }
   }
 }
+
+.Home {
+  &-listCourse {
+    .col-3 {
+      padding: 0 $spacer-xs !important;
+    }
+  }
+}

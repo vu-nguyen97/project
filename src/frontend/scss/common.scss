@@ -38,6 +38,27 @@
     right: $spacer-sm;
   }
 }
+
+.Card {
+  // position: relative;
+  // padding-bottom: calc( 6 / 9 * 100%);
+  // &-wrapper {
+  //   @include position-absolute0();
+  //   &-setting {
+  //     position: absolute;
+  //     top: $spacer-sm;
+  //     right: $spacer-sm;
+  //   }
+  // }
+  &:hover {
+    box-shadow: $box-shadow-medium !important;
+  }
+  &-bg {
+    position: relative;
+    padding-bottom: calc(30 / 70 * 100%);
+  }
+}
+
 // =========================================================================
 // override css of react-bootstrap and react-strap
 .input-group {

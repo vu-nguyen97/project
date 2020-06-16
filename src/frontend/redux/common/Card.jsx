@@ -4,7 +4,7 @@ import { Button } from 'react-bootstrap';
 export default class Card extends Component {
   render() {
     return (
-      <div className="Card u-shadowLight">
+      <div className="Card u-shadowLight u-marginBottomSmall">
         {/* <div className="Card-wrapper u-height100 u-width100 u-border u-shadowLight
           u-flex u-flexCol u-flexJustifyBetween
         ">
@@ -43,7 +43,11 @@ export default class Card extends Component {
           </div>
         </div> */}
 
-        <div className="Card-bg u-bgMedium"></div>
+        <div className="Card-bg u-bgLight">
+          <div className="Card-bg-icon u-height100 u-width100 u-flex u-flexJustifyCenter u-flexAlignItemsCenter">
+            <i className="fas fa-4x fa-book-reader u-textPlaceholder" />
+          </div>
+        </div>
         <div className="u-paddingSmall">
           <div className="u-fontWeightBolder">Mang may tinh</div>
           <div className="u-textXSmall">

@@ -39,6 +39,20 @@
   }
 }
 
+.DatePicker > div {
+  width: 100%;
+  .react-datepicker {
+    width: 100%;
+    &__month-container{
+      width: 100%;
+    }
+    &__month {
+      width: 100%;
+      margin: 0;
+    }
+  }
+}
+
 .Card {
   // position: relative;
   // padding-bottom: calc( 6 / 9 * 100%);
@@ -56,6 +70,9 @@
   &-bg {
     position: relative;
     padding-bottom: calc(30 / 70 * 100%);
+    &-icon {
+      @include position-absolute0();
+    }
   }
 }
 
@@ -80,6 +97,9 @@
 }
 .fa-3x {
   font-size: 1.8rem;
+}
+.fa-3x {
+  font-size: 2.8rem;
 }
 .fa-star.custom {
   color: $quaternary;

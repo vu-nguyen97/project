@@ -60,6 +60,7 @@
     }
     &-content {
       flex-grow: 1;
+      overflow: hidden;
 
       .dropdown-toggle {
         border-radius: 1.5rem !important;
@@ -77,9 +78,11 @@
     }
 
     .SidebarRight {
-      background-color: $tertiary;
-      flex: 0 0 250px;
-    
+      flex: 0 0 285px;
+      &-wrapper {
+        background-color: $tertiary;
+      }
+      
       &-notifications {
         &:hover {
           color: $black-700;

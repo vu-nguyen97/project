@@ -18,11 +18,13 @@ class InputDate extends Component {
 
   render() {
     return (
-      <DatePicker
-        selected={this.state.startDate}
-        // onChange={this.handleChange}
-        inline
-      />
+      <div className="DatePicker">
+        <DatePicker
+          selected={this.state.startDate}
+          // onChange={this.handleChange}
+          inline
+        />
+      </div>
     );
   }
 }

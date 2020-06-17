@@ -1,5 +1,10 @@
+$side-bar-left-width: 85px;
+$chat-width: 320px;
 .SidebarLeft {
-  flex: 0 0 85px;
+  a {
+    text-decoration: none !important;
+  }
+  flex: 0 0 $side-bar-left-width;
   &-tab {
     &:hover {
       background-color: $gray-200 !important;
@@ -32,16 +37,43 @@
       }
     }
   }
+  &-header {
+    height: 60px;
+    &-left {
+      flex: 0 0 $side-bar-left-width;
+    }
+    &-main {
+      flex-grow: 1;
+      &-select > div {
+        width: 480px;
+      }
+    }
+    &-right {
+      flex: 0 0 $chat-width;
+    }
+  }
 }
 .Chat {
-  flex: 0 0 280px;
-  box-sizing: border-box;
+  flex: 0 0 $chat-width;
   height: calc(100vh - 60px);
   position: relative;
 
+  &-messages {
+    overflow: auto;
+    // max-height: calc(100vh - 60px - 3rem);
+    &-avatar {
+      flex-shrink: 0;
+      flex-basis: auto;
+      width: 35px;
+      height: 35px;
+    }
+  }
+
   &-control {
-    position: absolute;
+    position: sticky;
     bottom: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     .mb-3 {
       margin: 0 !important;

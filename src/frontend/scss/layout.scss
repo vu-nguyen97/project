@@ -1,6 +1,7 @@
 .Layout {
   position: relative;
   &-header {
+    height: 60px;
     ul {
       display: flex;
       list-style: none;

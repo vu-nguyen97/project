@@ -39,6 +39,9 @@ $border-color: $gray-400;
 .u-border { border: $border-width solid $border-color !important; }
 .u-border0 { border: 0 !important; }
 .u-borderTop { border-top: $border-width solid $border-color !important; }
+.u-borderBottom { border-bottom: $border-width solid $border-color !important; }
+.u-borderRight{ border-right: $border-width solid $border-color !important; }
+.u-borderLeft { border-left: $border-width solid $border-color !important; }
 
 $rounded: 0.7rem !default;
 $rounded-pill: 1rem !default;

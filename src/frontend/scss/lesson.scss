@@ -1,0 +1,62 @@
+.SidebarLeft {
+  flex: 0 0 85px;
+  &-tab {
+    &:hover {
+      background-color: $gray-200 !important;
+      color: $black !important;
+      .tabName {
+        color: $black !important;
+      }
+    }
+
+    .fa {
+      color: $gray-700 !important;
+    }
+    .fa--active {
+      color: $black !important;
+    }
+    .active {
+      color: $black !important;
+    }
+  }
+}
+
+.Lesson {
+  &-video {
+    position: relative;
+    padding-bottom: calc( 34 / 70 * 100%);
+    &-container {
+      @include position-absolute0;
+      & > iframe {
+        height: 100%;
+      }
+    }
+  }
+}
+.Chat {
+  flex: 0 0 280px;
+  box-sizing: border-box;
+  height: calc(100vh - 60px);
+  position: relative;
+
+  &-control {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    .mb-3 {
+      margin: 0 !important;
+    }
+  }
+  .input-group {
+    input {
+      padding-left: $spacer-sm;
+      padding-right: 1rem;
+    }
+    span {
+      right: 0;
+    }
+    .fa {
+      color: $primary !important;
+    }
+  }
+}

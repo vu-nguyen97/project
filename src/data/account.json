@@ -1,0 +1,47 @@
+[
+  {
+    "id":0,
+    "name": "Sanford Hintz",
+    "username": "admin",
+    "password": "admin",
+    "phone": "092341429",
+    "address": "Ha Noi",
+    "permission": 1
+  },
+  {
+    "id":1,
+    "name": "Jocelyn Parisian",
+    "username": "user1",
+    "password": "user1",
+    "phone": "012324242",
+    "address": "Ha Noi",
+    "permission": 0
+  },
+  {
+    "id":2,
+    "name": "Jocelyn Parisian",
+    "username": "user2",
+    "password": "user2",
+    "phone": "012324242",
+    "address": "Ha Noi",
+    "permission": 1
+  },
+  {
+    "id":3,
+    "name": "Jocelyn Parisian",
+    "username": "user3",
+    "password": "user3",
+    "phone": "02324922",
+    "address": "Ha Noi",
+    "permission": 1
+  },
+  {
+    "id":4,
+    "name": "Jocelyn Parisian",
+    "username": "user4",
+    "password": "user4",
+    "phone": "01332255",
+    "address": "Ha Noi",
+    "permission": 1
+  }
+]

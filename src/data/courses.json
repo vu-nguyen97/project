@@ -1,0 +1,753 @@
+[
+  {
+    "id": 0,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20192",
+    "intitute": "CNTT&TT",
+    "lecturer": "Victoria Miller",
+    "lessons": [
+      {
+        "id": 0,
+        "name": "Tuần 1: Giới thiệu"
+      },
+      {
+        "id": 1,
+        "name": "Tuần 2: Chương 2"
+      },
+      {
+        "id": 2,
+        "name": "Tuần 3: Chương 3"
+      },
+      {
+        "id": 3,
+        "name": "Tuần 4: Chương 4"
+      },
+      {
+        "id": 4,
+        "name": "Tuần 5: Chương 5"
+      }
+    ],
+    "students": [
+      {
+        "name": "Nguyễn Văn Vũ"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 1,
+    "name": "Kiến trúc máy tính",
+    "code": "IT3030",
+    "descriptions": "Cung cấp cho sinh viên các kiến thức cơ bản về kiến trúc máy tính, bao gồm kiến trúc tập lệnh và tổ chức của máy tính cũng như những vấn đề cơ bản trong thiết kế một hệ thống máy tính. Trên cơ sở đó sinh viên có thể đánh giá được hiệu năng của các họ máy tính, khai thác và sử dụng hiệu quả các loại máy tính hiện hành và có khả năng tiếp cận để phát triển các hệ máy tính nhúng phục vụ các mục đích chuyên dụng. ",
+    "semester": "20192",
+    "intitute": "CNTT&TT",
+    "lecturer": "Amber Harris",
+    "lessons": [
+      {
+        "id": 0,
+        "name": "Tuần 1: Giới thiệu"
+      },
+      {
+        "id": 1,
+        "name": "Tuần 2: Chương 2"
+      },
+      {
+        "id": 2,
+        "name": "Tuần 3: Chương 3"
+      },
+      {
+        "id": 3,
+        "name": "Tuần 4: Chương 4"
+      },
+      {
+        "id": 4,
+        "name": "Tuần 5: Chương 5"
+      }
+    ],
+    "students": [
+      {
+        "name": "Nguyễn Văn Vũ"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 2,
+    "name": "Mạng máy tính",
+    "code": "IT3080",
+    "descriptions": "Nhằm cung cấp cho sinh viên những kiến thức cơ bản về kỹ thuật mạng máy tính, sau đó đi sâu vào một số công nghệ mạng hiện đại cho phép sinh viên có thể tự cập nhật kiến thức mới về mạng máy tính một cách thuận lợi ",
+    "semester": "20192",
+    "intitute": "CNTT&TT",
+    "lecturer": "Leo Lloyd",
+    "lessons": [
+      {
+        "id": 0,
+        "name": "Tuần 1: Giới thiệu"
+      },
+      {
+        "id": 1,
+        "name": "Tuần 2: Chương 2"
+      },
+      {
+        "id": 2,
+        "name": "Tuần 3: Chương 3"
+      },
+      {
+        "id": 3,
+        "name": "Tuần 4: Chương 4"
+      },
+      {
+        "id": 4,
+        "name": "Tuần 5: Chương 5"
+      }
+    ],
+    "students": [
+      {
+        "name": "Nguyễn Văn Vũ"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 3,
+    "name": "Đồ họa",
+    "code": "EE3420",
+    "descriptions": "",
+    "semester": "20182",
+    "intitute": "Viện Cơ khí",
+    "lecturer": "Charles King",
+    "lessons": [
+      {
+        "id": 0,
+        "name": "Tuần 1: Giới thiệu"
+      },
+      {
+        "id": 1,
+        "name": "Tuần 2: Chương 2"
+      },
+      {
+        "id": 2,
+        "name": "Tuần 3: Chương 3"
+      },
+      {
+        "id": 3,
+        "name": "Tuần 4: Chương 4"
+      },
+      {
+        "id": 4,
+        "name": "Tuần 5: Chương 5"
+      }
+    ],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 4,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20182",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 5,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20182",
+    "intitute": "CNTT&TT",
+    "lecturer": "Kimberly Clarke",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 6,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20182",
+    "intitute": "CNTT&TT",
+    "lecturer": "Gary Ross",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 7,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20182",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 8,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20192",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 9,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20192",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 10,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20172",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 11,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20172",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 12,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20172",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 13,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20181",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 14,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20181",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 15,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20192",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 16,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20192",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 17,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20191",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 18,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20191",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 19,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20182",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 20,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20172",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 21,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20182",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  },
+  {
+    "id": 22,
+    "name": "Tin học đại cương",
+    "code": "IT1110",
+    "descriptions": "Trang bị cho sinh viên những kiến thức cơ bản về cấu trúc và tổ chức máy tính, lập trình máy tính và cơ chế thực hiện chương trình, kỹ năng cơ bản để sử dụng máy tính hiệu quả trong học tập, nghiên cứu và làm việc trong các ngành kỹ thuật, công nghệ. ",
+    "semester": "20191",
+    "intitute": "CNTT&TT",
+    "lecturer": "Aletha Rogahn",
+    "lessons": [],
+    "students": [
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      },
+      {
+        "name": "Estrella Dibbert"
+      }
+    ],
+    "exam": "",
+    "assignments": ""
+  }
+]

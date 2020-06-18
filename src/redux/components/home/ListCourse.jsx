@@ -9,7 +9,8 @@ export default class ListCourse extends Component {
       0: { items: 1 },
       1024: { items: 3 },
     }
-
+    const {courses} = this.props;
+    
     return (
       <div>
         <AliceCarousel
@@ -19,24 +20,15 @@ export default class ListCourse extends Component {
           buttonsDisabled={true}
           dotsDisabled
         >
-          <div className="u-paddingLeftSmall u-paddingRightSmall">
-            <Card is_open={true} />
-          </div>
-          <div className="u-paddingLeftSmall u-paddingRightSmall">
-            <Card />
-          </div>
-          <div className="u-paddingLeftSmall u-paddingRightSmall">
-            <Card />
-          </div>
-          <div className="u-paddingLeftSmall u-paddingRightSmall">
-            <Card />
-          </div>
-          <div className="u-paddingLeftSmall u-paddingRightSmall">
-            <Card />
-          </div>
-          <div className="u-paddingLeftSmall u-paddingRightSmall">
-            <Card />
-          </div>
+          {
+            courses.map(
+              course => (
+                <div key={course.id} className="u-paddingLeftSmall u-paddingRightSmall">
+                  <Card course={course} is_open={true} />
+                </div>
+              )
+            )
+          }
         </AliceCarousel>
         <div onClick={() => this.Carousel.slideNext()}
           className="ViewMore u-cursorPointer u-textXSmall u-textRight"

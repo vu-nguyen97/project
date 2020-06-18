@@ -27,7 +27,7 @@ class Register extends Component {
 
     return (
       <div className="Register">
-        <div className="container">
+        <div className="container u-height100 u-flex u-flexAlignItemsCenter">
           <div className="u-width100 u-flex u-flexJustifyCenter u-flexAlignItemsCenter">
             <div className="Register-wrapper u-border u-shadowMedium">
               <div className="u-padding">

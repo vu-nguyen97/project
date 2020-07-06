@@ -4,12 +4,12 @@ import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap
 import institutes from '../../../data/institutes.js';
 
 const semesters = [
-  20192,
-  20191,
-  20182,
-  20181,
-  20172,
-  20171
+  '20192',
+  '20191',
+  '20182',
+  '20181',
+  '20172',
+  '20171'
 ]
 
 class CourseFilter extends Component {
@@ -58,7 +58,7 @@ class CourseFilter extends Component {
             <DropdownMenu>
               {
                 semesters.map((semester, id) => {
-                  let is_active = this.props.semester == semester ? true : false;
+                  let is_active = this.props.semester === semester ? true : false;
                   return (
                     <DropdownItem
                     key={id}

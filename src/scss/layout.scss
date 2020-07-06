@@ -35,6 +35,9 @@
     }
 
     &-setting {
+      a:hover {
+        text-decoration: none;
+      }
       position: absolute;
       height: 100%;
       right: 0;
@@ -85,6 +88,7 @@
       }
       
       &-notifications {
+        display: block;
         &:hover {
           color: $black-700;
           text-decoration: underline;

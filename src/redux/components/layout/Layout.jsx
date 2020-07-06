@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { FormControl } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
 
 import Footer from './Footer';
@@ -11,6 +12,11 @@ import Alert from '../../common/Alert';
 import avatar_img from '../../test/default-avatar.png';
 
 import { toggleSettingProfile, toggleUserAccount } from '../../actions'; 
+import store from '../../store';
+
+store.subscribe(() => {
+  console.log('Store', JSON.stringify(store.getState()))
+});
 
 class Layout extends Component {
   render() {
@@ -65,7 +71,9 @@ class Layout extends Component {
                       >
                         Thông tin cá nhân
                       </DropdownItem>
-                      <DropdownItem>Đăng xuất</DropdownItem>
+                      <DropdownItem>
+                        <Link to="/login" className="u-textBlack" >Đăng xuất</Link>
+                      </DropdownItem>
                     </DropdownMenu>
                   </Dropdown>
                 </div>

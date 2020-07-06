@@ -27,7 +27,7 @@ export default class Home extends Component {
 		const filters = Object.assign({}, this.state.filters, {
 			[name]: value
 		})
-		console.log('>>>',value, name, filters);
+		console.log('onFilter: ', name, value, filters);
 		this.setState({filters})
 	}
 	
@@ -46,9 +46,7 @@ export default class Home extends Component {
 
 		if(is_filter) {
 			Object.keys(filters).map(name => {
-				console.log('name', name);
 				if(this.state.filters[name] !== null) {
-					// console.log('1')
 					filter_courses = filter_courses.filter(course => course[name] === this.state.filters[name]);
 				}
 				console.log('filter_courses', filter_courses);
@@ -73,8 +71,8 @@ export default class Home extends Component {
 									<div className="u-marginTopSmall row">
 										{
 											filter_courses.map((course, id) => (
-												<div className="col-4">
-													<Card key={id} course={course} is_open={true} />
+												<div key={id} className="col-4">
+													<Card course={course} is_open={true} />
 												</div>
 											))
 										}

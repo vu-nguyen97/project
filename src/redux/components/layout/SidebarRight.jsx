@@ -12,17 +12,21 @@ export default class SidebarRight extends Component {
               <div className="u-fontWeightBolder u-textPrimary2">Thông báo mới</div>
               <div className="SidebarRight-viewMore u-textMuted u-cursorPointer u-textXSmall">Xem thêm</div>
             </div>
-            <div
-              href="https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25085" target="_blank"
-              className="SidebarRight-notifications u-padding u-bgWhite u-roundedPill u-marginTopSmall u-cursorPointer"
+            <a
+              href="https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25085" rel="noopener noreferrer" target="_blank"
+              className="SidebarRight-notifications u-textBlack u-padding u-bgWhite u-roundedPill u-marginTopSmall u-cursorPointer"
             >
               <span className="u-fontWeightBolder">[ĐTĐH]</span>
               &nbsp;
               Lịch mở đăng ký xét tốt nghiệp đợt 20192-A 08h00 ngày 02/06/2020
-            </div>
-            <div className="SidebarRight-notifications u-padding u-bgWhite u-roundedPill u-marginTopSmall u-cursorPointer">
-              <span className="u-fontWeightBolder">[ĐTĐH]</span>&nbsp;Kế hoạch thi điều kiện phân ngành cho sinh viên chương trình KS Chất lượng cao K63 13/06/2020
-            </div>
+            </a>
+            <a
+              href="https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25084" rel="noopener noreferrer" target="_blank"
+              className="SidebarRight-notifications u-textBlack u-padding u-bgWhite u-roundedPill u-marginTopSmall u-cursorPointer"
+              >
+              <span className="u-fontWeightBolder">[ĐTĐH]</span>&nbsp;
+              Kế hoạch thi điều kiện phân ngành cho sinh viên chương trình KS Chất lượng cao K63 13/06/2020
+            </a>
           </div>
           <div className="u-marginBottomSmall">
             <DatePicker />
